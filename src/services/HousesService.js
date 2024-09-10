@@ -5,6 +5,7 @@ class HousesService {
   async getHouses(request, response, next) {
     try {
       const houses = await dbContext.Houses.find()
+      return houses
     } catch (error) {
       next(error)
     }
