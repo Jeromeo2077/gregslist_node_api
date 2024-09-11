@@ -10,7 +10,6 @@ class HousesService {
   async getHouseById(houseId) {
     const house = await dbContext.Houses.findById(houseId)
     return house
-
   }
 
 }
